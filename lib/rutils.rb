@@ -53,6 +53,6 @@ end
   require File.join(RuTils::INSTALLATION_DIRECTORY, "lib", submodule.to_s, submodule.to_s)
 end
 
-unless defined?(RUTILS_USE_DATE_HELPERS) && !RUTILS_USE_DATE_HELPERS
+unless defined?($RUTILS_USE_DATE_HELPERS) && !$RUTILS_USE_DATE_HELPERS
   require File.join(RuTils::INSTALLATION_DIRECTORY, "lib", "integration", "integration")
 end
